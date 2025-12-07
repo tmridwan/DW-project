@@ -17,25 +17,17 @@ def details(row):
     return contents
 
 def main():
+    webdriver_path = "venv/Scripts/chromedriver.exe"
     row_contents = []
 
-    # Create driver ONCE outside loop (VERY IMPORTANT!)
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-
     for i in range(1, 21):
-        url = "https://www.carwow.co.uk/used-cars"
+        service = Service(webdriver_path)
+        driver = webdriver.Chrome(service=service)
+        url = "https://www.iris.edu/app/seismic-monitor/table"
         driver.get(url)
+        table = driver.find_element(By.CLASS_NAME, 'datatable-row-group')
+
         time.sleep(3)
-
-        # Fetch all cards
-        cards = driver.find_elements(By.CLASS_NAME, 'deal-card')
-
-        for card in cards:
-            try:
-                price = card.find_element(By.CLASS_NAME, 'deal-card__price').text
-                row_contents.append(price)
-            except:
-                continue
 
     driver.quit()
 
