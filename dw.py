@@ -30,6 +30,7 @@ def main():
     webdriver_path = "venv/Scripts/chromedriver.exe"
     row_contents = []
 
+
     service = Service(webdriver_path)
     driver = webdriver.Chrome(service=service)
     url = "https://www.iris.edu/app/seismic-monitor/table"
