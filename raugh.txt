@@ -1,0 +1,36 @@
+Title: Car price analysis based on imported Japanese reconditioned cars in Bangladesh
+
+Sources: https://gari-import.com.bd/stock-list
+
+Objectives:
+
+1. Total listings based on different brands and models of Japanese reconditioned cars
+2. Price comparison across various models and grades
+3. In-depth analysis based on different features like year, engine capacity, fuel type, mileage, color, and rating
+4. Identification of trends in pricing based on vehicle age and condition
+5. Assessment of the availability of specific features (e.g., leather seats, moonroof) across listings
+6. Evaluation of price variations by region or dealer within Bangladesh
+7. Determination of the most popular brands and models based on listing frequency
+8. Analysis of price-to-mileage ratios to assess value for money
+9. Investigation of seasonal or market-driven price fluctuations
+10. Comparison of reconditioned car prices with new car prices in the Bangladesh market
+
+
+assignment:
+Topic Assignment for the project can be found here.
+In total, this project bears 100 points. This project will judge the following skills:
+➔ Dynamic Web Scraping using Selenium (30 points)
+➔ Data Processing, Transformation, Manipulation (10 points)
+➔ Visualization and Analytics in Tableau Public (30 points)
+➔ Interesting Findings from Tableau Dashboard (15 points)
+➔ Setting Up the project in GitHub (15 points)
+The points will be based on how well each task was done. The grading will be
+done by the MasterCourse Team.
+During the project week(s), participants are highly encouraged to discuss their
+problems in the Discord group. However, copying each other’s code is strongly
+discouraged and will not be allowed.
+MasterCourse holds the right to disqualify a project submission if there are some
+moral and ethical issues like plagiarism, hate speech, etc. are found.
+NB: The points from all the projects and assignments during the intensive
+curriculum will decide who gets the priority during job search help from
+MasterCourse after the intensive curriculum ends.
