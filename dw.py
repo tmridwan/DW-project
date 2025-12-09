@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 import time
 import pandas as pd
 
@@ -27,12 +28,13 @@ def details(row):
     return contents
 
 def main():
+    options = Options()
     webdriver_path = "venv/Scripts/chromedriver.exe"
     row_contents = []
 
 
     service = Service(webdriver_path)
-    driver = webdriver.Chrome(service=service)
+    driver = webdriver.Chrome(options=options)
     url = "https://www.iris.edu/app/seismic-monitor/table"
     driver.get(url)
     table = driver.find_element(By.CLASS_NAME, 'ngx-datatabledatatable-row-group')
