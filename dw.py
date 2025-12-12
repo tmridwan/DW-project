@@ -17,6 +17,7 @@ def details(row):
     try:
         result["Date"] = row.find_element(By.CLASS_NAME, "tbdate").text.split(" ")[0]
         result["Time"] = row.find_element(By.CLASS_NAME, "tbdate").text.split(" ")[1]
+        result["Latitude"] = row.find_element(By.CLASS_NAME, "tblat").text
         result["Longitude"] = row.find_element(By.CLASS_NAME, "tblon").text
         result["Depth"] = row.find_element(By.CLASS_NAME, "tbdepth").text
         result["Region"] = row.find_element(By.CLASS_NAME, "tbreg").text
@@ -32,7 +33,7 @@ def details(row):
 def main():
     webdriver_path = "venv/Scripts/chromedriver.exe"
     row_contents = []
-    for i in range(1, 2):
+    for i in range(1, 50):
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service)
         url = f"https://www.emsc.eu/Earthquake_data/?view={i}"
